@@ -11,11 +11,11 @@ set wrap "自动换行
 set showcmd "显示指令
 set wildmenu "菜单显示补全内容
 
-set hlsearch
-exec "nohlsearch"
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch "高亮显示搜索
+exec "nohlsearch" 
+set incsearch "动态高亮显示搜索
+set ignorecase “不区分大小写换行
+set smartcase "智能大小写搜索
 
 noremap <LEADER><CR> :nohlsearch<CR>
 
@@ -24,6 +24,9 @@ map S :w<CR>
 map Q :q<CR>
 map R :so %
 
+" ===
+" === 插件
+" ===
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'vim-airline/vim-airline'
@@ -31,5 +34,8 @@ Plug 'connorholyday/vim-snazzy'
 
 call plug#end()
 
+" ===
+" === vim-snazzy配置
+" ===
 let g:SnazzyTransparent = 1
 color snazzy
