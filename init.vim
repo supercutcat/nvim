@@ -1,15 +1,15 @@
-let mapleader=" "
-syntax on 
+let mapleader=" " "将leader（windows键）换成空格键
+syntax on "显示高亮
 
 " ===
 " === Editor behavior
 " ===
-set number
-set relativenumber
-set cursorline
-set wrap
-set showcmd
-set wildmenu
+set number "显示行号
+set relativenumber "显示相对行号
+set cursorline "高亮显示当前行
+set wrap "自动换行
+set showcmd "显示指令
+set wildmenu "菜单显示补全内容
 
 set hlsearch
 exec "nohlsearch"
