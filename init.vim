@@ -14,7 +14,7 @@ set wildmenu "菜单显示补全内容
 set hlsearch "高亮显示搜索
 exec "nohlsearch" 
 set incsearch "动态高亮显示搜索
-set ignorecase “不区分大小写换行
+set ignorecase "不区分大小写换行
 set smartcase "智能大小写搜索
 
 noremap <LEADER><CR> :nohlsearch<CR>
